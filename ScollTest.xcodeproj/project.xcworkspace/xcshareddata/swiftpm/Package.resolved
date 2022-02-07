@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CryptoSwift",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift",
+        "state": {
+          "branch": null,
+          "revision": "8d4f6384e0a8cc41f2005247241dd553963a492a",
+          "version": "1.4.1"
+        }
+      },
+      {
+        "package": "Device",
+        "repositoryURL": "https://github.com/Alelenka/Device",
+        "state": {
+          "branch": "spm-support",
+          "revision": "df290adc142a10ef73a9b62e9f03e54d1f2f62ee",
+          "version": null
+        }
+      },
+      {
+        "package": "Utils",
+        "repositoryURL": "https://github.com/surfstudio/iOS-Utils.git",
+        "state": {
+          "branch": "update-spm-versions",
+          "revision": "37cc945725057535e891d6c11861785b0c1550ee",
+          "version": null
+        }
+      },
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager.git",
+        "state": {
+          "branch": null,
+          "revision": "474f849accae40fe61b5302d9b057dd48ee073ba",
+          "version": "6.5.9"
+        }
+      },
+      {
+        "package": "ReactiveDataDisplayManager",
+        "repositoryURL": "https://github.com/surfstudio/ReactiveDataDisplayManager.git",
+        "state": {
+          "branch": null,
+          "revision": "83e69174ae95cd845b010992515fa84e9a8354f2",
+          "version": "7.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
