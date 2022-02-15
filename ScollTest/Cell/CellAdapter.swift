@@ -23,12 +23,12 @@ final class CellAdapter {
 
     func configure(len: Int) {
         (0...len).forEach { i in
-            addGenerator(isLast: i == len)
+            addGenerator(i: i, isLast: i == len)
         }
     }
 
-    private func addGenerator(isLast: Bool) {
-        let generator = Generator(with: isLast)
+    private func addGenerator(i: Int, isLast: Bool) {
+        let generator = Generator(with: (i, isLast))
 
         generator.cell?.onBecomeActive = { [weak self, weak generator] in
             guard let generator = generator,

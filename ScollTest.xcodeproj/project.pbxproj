@@ -22,6 +22,7 @@
 		50132292279B0FDC001DF6FF /* ScrollPositionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50132291279B0FDC001DF6FF /* ScrollPositionManager.swift */; };
 		50132294279B1090001DF6FF /* ScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50132293279B1090001DF6FF /* ScrollViewExtension.swift */; };
 		5029C3E127B071E700ACDB16 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5029C3E027B071E700ACDB16 /* IQKeyboardManagerSwift */; };
+		50C3FD7D27BA3F9F00CC93BA /* KeyboardPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3FD7C27BA3F9F00CC93BA /* KeyboardPlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		5013228F279B0F98001DF6FF /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		50132291279B0FDC001DF6FF /* ScrollPositionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPositionManager.swift; sourceTree = "<group>"; };
 		50132293279B1090001DF6FF /* ScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExtension.swift; sourceTree = "<group>"; };
+		50C3FD7C27BA3F9F00CC93BA /* KeyboardPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		50132269279B00F5001DF6FF /* ScollTest */ = {
 			isa = PBXGroup;
 			children = (
+				50C3FD7B27BA3F9200CC93BA /* Plugin */,
 				5013228E279B0F8C001DF6FF /* Managers */,
 				50132281279B0338001DF6FF /* Cell */,
 				5013226A279B00F5001DF6FF /* AppDelegate.swift */,
@@ -105,6 +108,14 @@
 				50132293279B1090001DF6FF /* ScrollViewExtension.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		50C3FD7B27BA3F9200CC93BA /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				50C3FD7C27BA3F9F00CC93BA /* KeyboardPlugin.swift */,
+			);
+			path = Plugin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				50132294279B1090001DF6FF /* ScrollViewExtension.swift in Sources */,
 				50132292279B0FDC001DF6FF /* ScrollPositionManager.swift in Sources */,
 				5013226D279B00F5001DF6FF /* SceneDelegate.swift in Sources */,
+				50C3FD7D27BA3F9F00CC93BA /* KeyboardPlugin.swift in Sources */,
 				50132283279B0349001DF6FF /* TextFieldCell.swift in Sources */,
 				50132289279B07DF001DF6FF /* CellAdapter.swift in Sources */,
 			);

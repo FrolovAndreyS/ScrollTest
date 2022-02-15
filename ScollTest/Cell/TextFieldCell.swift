@@ -14,8 +14,9 @@ final class TextFieldCell: UITableViewCell, ConfigurableItem {
 
     var onBecomeActive: (() -> Void)?
 
-    func configure(with model: Bool) {
-        if model {
+    func configure(with model: (Int, Bool)) {
+        textField.text = "\(model.0)"
+        if model.1 {
             textField.text = "This is last cell"
         }
     }
