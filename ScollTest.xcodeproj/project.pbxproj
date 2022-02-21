@@ -22,6 +22,7 @@
 		50132292279B0FDC001DF6FF /* ScrollPositionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50132291279B0FDC001DF6FF /* ScrollPositionManager.swift */; };
 		50132294279B1090001DF6FF /* ScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50132293279B1090001DF6FF /* ScrollViewExtension.swift */; };
 		5029C3E127B071E700ACDB16 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5029C3E027B071E700ACDB16 /* IQKeyboardManagerSwift */; };
+		5037E14D27C29E5500849A34 /* KeyboardManager in Frameworks */ = {isa = PBXBuildFile; productRef = 5037E14C27C29E5500849A34 /* KeyboardManager */; };
 		50C3FD7D27BA3F9F00CC93BA /* KeyboardPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3FD7C27BA3F9F00CC93BA /* KeyboardPlugin.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		5013228F279B0F98001DF6FF /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		50132291279B0FDC001DF6FF /* ScrollPositionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPositionManager.swift; sourceTree = "<group>"; };
 		50132293279B1090001DF6FF /* ScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExtension.swift; sourceTree = "<group>"; };
+		5037E14B27C29E4A00849A34 /* KeyboardManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = KeyboardManager; path = ../../tests/ScollTest/ScollTest/KeyboardManager; sourceTree = "<group>"; };
 		50C3FD7C27BA3F9F00CC93BA /* KeyboardPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +53,7 @@
 				5013228D279B0F51001DF6FF /* Utils in Frameworks */,
 				50132280279B01EC001DF6FF /* ReactiveDataDisplayManager in Frameworks */,
 				5029C3E127B071E700ACDB16 /* IQKeyboardManagerSwift in Frameworks */,
+				5037E14D27C29E5500849A34 /* KeyboardManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +63,10 @@
 		5013225E279B00F5001DF6FF = {
 			isa = PBXGroup;
 			children = (
+				5037E14B27C29E4A00849A34 /* KeyboardManager */,
 				50132269279B00F5001DF6FF /* ScollTest */,
 				50132268279B00F5001DF6FF /* Products */,
+				50157DAC27C297B700D8A042 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +115,13 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		50157DAC27C297B700D8A042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50C3FD7B27BA3F9200CC93BA /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 				5013227F279B01EC001DF6FF /* ReactiveDataDisplayManager */,
 				5013228C279B0F51001DF6FF /* Utils */,
 				5029C3E027B071E700ACDB16 /* IQKeyboardManagerSwift */,
+				5037E14C27C29E5500849A34 /* KeyboardManager */,
 			);
 			productName = ScollTest;
 			productReference = 50132267279B00F5001DF6FF /* ScollTest.app */;
@@ -355,9 +368,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2WKA6N9US;
+				DEVELOPMENT_TEAM = EFAAG9GXN4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScollTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -372,6 +386,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = af.ScollTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Surf Wildcard Dev";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,9 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2WKA6N9US;
+				DEVELOPMENT_TEAM = EFAAG9GXN4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScollTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -400,6 +416,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = af.ScollTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Surf Wildcard Dev";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,6 +488,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5029C3DF27B071E700ACDB16 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		5037E14C27C29E5500849A34 /* KeyboardManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KeyboardManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

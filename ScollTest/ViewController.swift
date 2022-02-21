@@ -8,6 +8,7 @@
 import UIKit
 import Utils
 import ReactiveDataDisplayManager
+import KeyboardManager
 
 final class ViewController: UIViewController {
 
@@ -19,75 +20,24 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var buttonContainer: UIView!
 
-    @IBOutlet private weak var tableViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var bottomConstraint: NSLayoutConstraint!
 
-    //private var keyboardManager: KeyboardPositionManager?
-    //private var scrollManager: ScrollPositionManager?
-    
-    private lazy var manager = tableView.rddm.baseBuilder.add(plugin: KeyboardPlugin()).build()
+    private lazy var manager = tableView.rddm.baseBuilder.build()
     private lazy var adapter = CellAdapter(manager: manager)
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        //configureKeyboardManager()
-        //keyboardManager?.subscribeOnKeyboardNotifications()
-        //subscribeOnKeyboardNotifications()
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        //keyboardManager?.unsubscribeFromKeyboardNotifications()
-        //unsubscribeFromKeyboardNotifications()
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        enable(rules: [
+            .encreaseContsraintAboveKeyboard(constraint: bottomConstraint, offset: 0),
+            .autoscroll(scrollType: .toCenter)
+        ])
     }
 
     private func configure() {
         title = "Test table view"
-
         navigationController?.navigationBar.prefersLargeTitles = true
-
         adapter.configure(len: 30)
-
-        // ScrollManager
-        
-        adapter.onViewBecomeActive = { [weak self] cell in
-            //self?.scrollManager?.setActiveField(cell)
-            //self?.scrollManager?.scrollIfNeeded()
-        }
-
-        // RDDM
-
-        adapter.onGeneratorBecomeActive = { [weak self] generator in
-            //self?.manager.scrollTo(generator: generator, scrollPosition: .middle, animated: true)
-        }
     }
 
-//    private func configureKeyboardManager() {
-//        let scrollManager = ScrollPositionManager(.init(scrollView: tableView,
-//                                                        offset: .zero))
-//        self.scrollManager = scrollManager
-//        keyboardManager = KeyboardPositionManager([scrollManager])
-//    }
-
 }
-
-// MARK: - Keyboard
-//
-//extension ViewController: KeyboardObservable, FullKeyboardPresentable {
-//
-//    func keyboardWillBeShown(keyboardInfo: Notification.KeyboardInfo) {
-//        guard let keyboardHeight = keyboardInfo.frameEnd?.height else { return }
-//        tableViewBottomConstraint.constant = keyboardHeight - (Constants.buttonContainerHeight + (UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? .zero))
-//        view.layoutIfNeeded()
-//    }
-//
-//    func keyboardWillBeHidden(keyboardInfo: Notification.KeyboardInfo) {
-//        tableViewBottomConstraint.constant = 0
-//        view.layoutIfNeeded()
-//    }
-//
-//}

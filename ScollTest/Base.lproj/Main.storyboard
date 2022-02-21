@@ -46,7 +46,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="gM1-bv-yC6" secondAttribute="trailing" constant="16" id="6Em-At-9VT"/>
                                     <constraint firstAttribute="height" constant="80" id="IS0-9b-Aad"/>
@@ -70,10 +70,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="OSn-bf-jLt"/>
                     <connections>
+                        <outlet property="bottomConstraint" destination="xvn-BU-Aup" id="Kg7-RT-fFK"/>
                         <outlet property="buttonContainer" destination="iJu-CQ-XSb" id="S4U-qh-lXO"/>
                         <outlet property="mainButton" destination="gM1-bv-yC6" id="xip-GD-xFW"/>
                         <outlet property="tableView" destination="ae9-Fi-GQg" id="8ML-2e-XIw"/>
-                        <outlet property="tableViewBottomConstraint" destination="saZ-sD-qcn" id="qp2-M8-ERl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,6 +84,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
