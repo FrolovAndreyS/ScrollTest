@@ -28,9 +28,9 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        enable(rules: [
-            .encreaseContsraintAboveKeyboard(constraint: bottomConstraint, offset: 0),
-            .autoscroll(scrollType: .toCenter)
+        enubleKeyboardManager(with: [
+            .encreaseConstraintAboveKeyboard(constraint: bottomConstraint, offset: 0),
+            .autoScroll(mode: .toCenter(offset: Constants.buttonContainerHeight))
         ])
     }
 

@@ -22,7 +22,7 @@
 		50132292279B0FDC001DF6FF /* ScrollPositionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50132291279B0FDC001DF6FF /* ScrollPositionManager.swift */; };
 		50132294279B1090001DF6FF /* ScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50132293279B1090001DF6FF /* ScrollViewExtension.swift */; };
 		5029C3E127B071E700ACDB16 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5029C3E027B071E700ACDB16 /* IQKeyboardManagerSwift */; };
-		5037E14D27C29E5500849A34 /* KeyboardManager in Frameworks */ = {isa = PBXBuildFile; productRef = 5037E14C27C29E5500849A34 /* KeyboardManager */; };
+		5057B46327CBBDDB002CB2BF /* KeyboardManager in Frameworks */ = {isa = PBXBuildFile; productRef = 5057B46227CBBDDB002CB2BF /* KeyboardManager */; };
 		50C3FD7D27BA3F9F00CC93BA /* KeyboardPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3FD7C27BA3F9F00CC93BA /* KeyboardPlugin.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 		5013228F279B0F98001DF6FF /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		50132291279B0FDC001DF6FF /* ScrollPositionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPositionManager.swift; sourceTree = "<group>"; };
 		50132293279B1090001DF6FF /* ScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExtension.swift; sourceTree = "<group>"; };
-		5037E14B27C29E4A00849A34 /* KeyboardManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = KeyboardManager; path = ../../tests/ScollTest/ScollTest/KeyboardManager; sourceTree = "<group>"; };
+		5057B46127CBBDB2002CB2BF /* KeyboardManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = KeyboardManager; sourceTree = "<group>"; };
 		50C3FD7C27BA3F9F00CC93BA /* KeyboardPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 				5013228D279B0F51001DF6FF /* Utils in Frameworks */,
 				50132280279B01EC001DF6FF /* ReactiveDataDisplayManager in Frameworks */,
 				5029C3E127B071E700ACDB16 /* IQKeyboardManagerSwift in Frameworks */,
-				5037E14D27C29E5500849A34 /* KeyboardManager in Frameworks */,
+				5057B46327CBBDDB002CB2BF /* KeyboardManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		5013225E279B00F5001DF6FF = {
 			isa = PBXGroup;
 			children = (
-				5037E14B27C29E4A00849A34 /* KeyboardManager */,
+				5057B46127CBBDB2002CB2BF /* KeyboardManager */,
 				50132269279B00F5001DF6FF /* ScollTest */,
 				50132268279B00F5001DF6FF /* Products */,
 				50157DAC27C297B700D8A042 /* Frameworks */,
@@ -150,7 +150,7 @@
 				5013227F279B01EC001DF6FF /* ReactiveDataDisplayManager */,
 				5013228C279B0F51001DF6FF /* Utils */,
 				5029C3E027B071E700ACDB16 /* IQKeyboardManagerSwift */,
-				5037E14C27C29E5500849A34 /* KeyboardManager */,
+				5057B46227CBBDDB002CB2BF /* KeyboardManager */,
 			);
 			productName = ScollTest;
 			productReference = 50132267279B00F5001DF6FF /* ScollTest.app */;
@@ -489,7 +489,7 @@
 			package = 5029C3DF27B071E700ACDB16 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
-		5037E14C27C29E5500849A34 /* KeyboardManager */ = {
+		5057B46227CBBDDB002CB2BF /* KeyboardManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = KeyboardManager;
 		};
