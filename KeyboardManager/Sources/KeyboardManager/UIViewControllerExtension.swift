@@ -15,7 +15,7 @@ extension UIViewController {
         }
     }
     
-    public func enubleKeyboardManager(with rules: Set<KeyboardManagerRules>) {
+    public func enableKeyboardManager(with rules: Set<KeyboardManagerRules>) {
         let manager = KeyboardManager(viewController: self)
         manager.enableRules(rules: rules)
         self.keyboardManager = manager
