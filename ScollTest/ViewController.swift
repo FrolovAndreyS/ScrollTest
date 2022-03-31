@@ -28,7 +28,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        enubleKeyboardManager(with: [
+        enableKeyboardManager(with: [
             .encreaseConstraintAboveKeyboard(constraint: bottomConstraint, offset: 0),
             .autoScroll(mode: .toCenter(offset: Constants.buttonContainerHeight))
         ])
